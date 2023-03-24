@@ -6,13 +6,13 @@
     </head>
     <body>
         <div class="enlaces">
-                <a href="pagina1.html">Velocidad</a>
+                <a href="pagina1.html"><img src="./imagenes/velocidad.png" alt="velocidad"></a>
                 <span> </span>
-                <a href="pagina2.html">Fondo</a>
+                <a href="pagina2.html"><img src="./imagenes/fondo.png" alt="fondo"></a>
                 <span> </span>
-                <a href="pagina2.html">Concursos</a>
+                <a href="pagina3.html"><img src="./imagenes/concursos.png" alt="concursos"></a>
                 <span> </span>
-                <a href="pagina2.html">Competiciones</a>
+                <a href="pagina4.html"><img src="./imagenes/estadio.png" alt="estadio"></a>
         </div>
         <header>
             <h1>Atletismo</h1>
@@ -22,7 +22,7 @@
                 <ul class="referencias">
                     <li><a href="#Intro">Introducción</a></li>
                     <li><a href="#Estadio">Estadio</a></li>
-                    <li><a></a></li>
+                    <li><a href="Famosos">Atletas Históricos</a></li>
                 </ul>
             </nav>
         </div>
@@ -92,7 +92,7 @@
             </div>
             <h2 id="Famosos">Principales atletas de la historia</h2>
             <div>
-                <p>En 2000, el libro publicado por el diario deportivo francés España nairo, 100 campeones en un siglo de deporte, 
+                <p id="historico">En 2000, el libro publicado por el diario deportivo francés España nairo, 100 campeones en un siglo de deporte, 
                     establecía una clasificación de los 100 atletas del siglo, en la que el atletismo era el deporte más representado. 
                     Por otra parte, en 1999, la IAAF nombra a los campeones de atletismo del siglo XX. Entre los hombres, el 
                     estadounidense Carl Lewis superó a su compatriota Jesse Owens, mientras que la neerlandesa Fanny Blankers-Koen fue 
@@ -165,55 +165,74 @@
                     </p>
                 </div>
                 <div class="imagen">
-                    <img src="https://www.soycorredor.es/uploads/s1/69/64/73/5e50f7640de694022a8bc310-el-record-del-mundo-de-yulimar-rojas-en-imagenes.jpeg" alt="yulimarrojas">
+                    <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/12/24/16719000491912.jpg" alt="yulimarrojas">
                 </div>
             </div>
         </div>
-        <form action="" method="post">
-            <label for="Pruebas">Selecciona tu prueba favorita</label>
-            <br>
-            <select name="Pruebas">
-                <option value="100">100m</option>
-                <option value="200">200m</option>
-                <option value="400">400m</option>
-                <option value="800">800m</option>
-                <option value="1500">1500m</option>
-                <option value="3000">3000m</option>
-                <option value="5000">5000m</option>
-                <option value="10000">10000m</option>
-                <option value="110mv">100mv</option>
-                <option value="400mv">400mv</option>
-                <option value="relevos">Relevos</option>
-                <option value="maraton">Maratón</option>
-                <option value="20km M">20km Marcha</option>
-                <option value="50km M">50km Marcha</option>
-                <option value="salto">Salto de longitud</option>
-                <option value="triple">Salto de triple</option>
-                <option value="altura">Salto de altura</option>
-                <option value="jabalina">Lanzamiento de jabalina</option>
-                <option value="disco">Lanzamiento de disco</option>
-                <option value="martillo">Lanzamiento de martillo</option>
-                <option value="peso">Lanzamiento de peso</option>
-                <option value="combinadas">Combinadas</option>
-            </select>
-            <input type="submit" value="Enviar">
-        </form>
-        <form action="" method="post">
-            <p>Rellene sus datos si quiere recibir la revista mensual</p>
-            <label for="Nombre">Nombre</label>
-            <input type="text" id="name" name="Nombre">
-            <br>
+        <div class="encuestas">
+            <form action="" method="post">
+                <label for="Pruebas">Selecciona tu prueba favorita</label>
+                <br>
+                <select name="Pruebas">
+                    <option value="100">100m</option>
+                    <option value="200">200m</option>
+                    <option value="400">400m</option>
+                    <option value="800">800m</option>
+                    <option value="1500">1500m</option>
+                    <option value="3000">3000m</option>
+                    <option value="5000">5000m</option>
+                    <option value="10000">10000m</option>
+                    <option value="110mv">100mv</option>
+                    <option value="400mv">400mv</option>
+                    <option value="relevos">Relevos</option>
+                    <option value="maraton">Maratón</option>
+                    <option value="20km M">20km Marcha</option>
+                    <option value="50km M">50km Marcha</option>
+                    <option value="salto">Salto de longitud</option>
+                    <option value="triple">Salto de triple</option>
+                    <option value="altura">Salto de altura</option>
+                    <option value="jabalina">Lanzamiento de jabalina</option>
+                    <option value="disco">Lanzamiento de disco</option>
+                    <option value="martillo">Lanzamiento de martillo</option>
+                    <option value="peso">Lanzamiento de peso</option>
+                    <option value="combinadas">Combinadas</option>
+                </select>
+                <input type="submit" value="Enviar">
+            </form>
+            <form action="" method="post">
+                <p>Rellene sus datos si quiere recibir la revista mensual</p>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="name" name="Nombre">
+                <br>
 
-            <label for="Apellidos">Apellidos</label>
-            <textarea id="Apellidos" name="Apellidos" rows="2" cols="28"></textarea>
-            <br>
+                <label for="Apellidos">Apellidos</label>
+                <textarea id="Apellidos" name="Apellidos" rows="2" cols="28"></textarea>
+                <br>
 
-            <label for="email">Email: </label>
-            <input type="email" id="email" placeholder="prueba@direccion.com" >
-            <br>
-            <input type="submit" value="Registrarse">
-        </form>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="prueba@direccion.com" >
+                <br>
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
         <footer>
+            <div>
+                <img id="rfea" src="./imagenes/rfea.png" alt="rfea">
+                <img id="ironhack" src="./imagenes/ironhack.png" alt="ironhack">
+                <div class="enlaces">
+                    <div>
+                        <a href="pagina1.html"><img src="./imagenes/velocidad.png" alt="velocidad"></a>
+                        <span> </span>
+                        <a href="pagina2.html"><img src="./imagenes/fondo.png" alt="fondo"></a>
+                    </div>
+                    <div>
+                        <a href="pagina3.html"><img src="./imagenes/concursos.png" alt="concursos"></a>
+                        <span> </span>
+                        <a href="pagina4.html"><img src="./imagenes/estadio.png" alt="estadio"></a>
+                    </div>
+            </div>
+            </div>
+            <p>© 2023 - Atletismo - Todos los derechos reservados</p>
 
         </footer>
     </body>

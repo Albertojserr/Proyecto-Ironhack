@@ -1,10 +1,12 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Insertamos la hoja de estidos style.css y ponemos el titulo de esta página-->
         <link rel="stylesheet" href="./css/style.css">
         <title>Proyecto</title>
     </head>
     <body>
+        <!-- Insertamos los links para dirigir a otras páginas, estos se verán como unas imágenes-->
         <div class="enlaces">
                 <a href="pagina1.html"><img src="./imagenes/velocidad.png" alt="velocidad"></a>
                 <span> </span>
@@ -99,12 +101,13 @@
                     premiada entre las mujeres. El 2012 esa misma institución crea el Salón de la Fama.</p>
             </div>
             <h3>Hombres</h3>
+            <!--Tenemos dos tipos de filas, filaimpar y filapar, que lo que los diferencia es el orden en el que se coloca el texto y la imagen-->
             <div class="filaimpar">
                 <div class="texto">
                     <p>
                         Entre los velocistas, el estadounidense Carl Lewis es, sin duda, el atleta que ha marcado la disciplina por la amplitud 
                         de su palmarés. Con sus nueve títulos olímpicos (entre ellos cuatro en salto de longitud) y ocho campeonatos del mundo, 
-                        ha logrado mantener su dominio durante casi dos décadas.80​Jesse Owens se aseguró un lugar en la historia del deporte con 
+                        ha logrado mantener su dominio durante casi dos décadas. Jesse Owens se aseguró un lugar en la historia del deporte con 
                         la obtención de cuatro títulos olímpicos en los Juegos de 1936. Otros velocistas de renombre son Ray Ewry, Alvin Kraenzlein, 
                         Jim Hines, Tommy Smith, Valeri Borzov, Pietro Mennea y más recientemente, Butch Reynolds, Frankie Fredericks, Donovan Bailey, 
                         Maurice Greene, Michael Johnson y Usain Bolt el cuál ha roto todos los records posibles y se ha coronado como el mejor velocista 
@@ -169,8 +172,9 @@
                 </div>
             </div>
         </div>
+        <!--Creamos las encuestas, con la pagina de respuesta en action, con target=_new para que lo ponga en una nueva página-->
         <div class="encuestas">
-            <form action="" method="post">
+            <form action="respuesta.html" method="get" target="_new">
                 <label for="Pruebas">Selecciona tu prueba favorita</label>
                 <br>
                 <select name="Pruebas">
@@ -199,7 +203,7 @@
                 </select>
                 <input type="submit" value="Enviar">
             </form>
-            <form action="" method="post">
+            <form action="respuesta.html" method="get" target="_new">
                 <p>Rellene sus datos si quiere recibir la revista mensual</p>
                 <label for="Nombre">Nombre</label>
                 <input type="text" id="name" name="Nombre">
@@ -215,6 +219,7 @@
                 <input type="submit" value="Registrarse">
             </form>
         </div>
+        <!--Aqui está el footer, donde encontramos de nuevo los enlaces para que no haya que subir hasta arriba para cambiar de página-->
         <footer>
             <div>
                 <img id="rfea" src="./imagenes/rfea.png" alt="rfea">
@@ -230,10 +235,9 @@
                         <span> </span>
                         <a href="pagina4.html"><img src="./imagenes/estadio.png" alt="estadio"></a>
                     </div>
-            </div>
+                </div>
             </div>
             <p>© 2023 - Atletismo - Todos los derechos reservados</p>
-
         </footer>
     </body>
 

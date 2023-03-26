@@ -1,13 +1,6 @@
+/*Principalmente para el index pero usado en el resto*/
 html{
     background-color: rgb(191, 145, 134);
-}
-.enlaces{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-around;
-}
-.enlaces a img{
-    height: 50px;
 }
 header{
     display: flex;
@@ -28,12 +21,35 @@ h2{
 h3{
     font-size: 20px;
 }
-.contenido{
-    display: flex;
-    flex-direction: column;
+section{
+    margin-left: 10px;
 }
 img{
     width: 100%;
+}
+a{
+    color:black;
+}
+footer div .enlaces{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width:30%;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 2px;
+    justify-self:right;
+}
+footer div .enlaces div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.enlaces{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+}
+.enlaces a img{
+    height: 50px;
 }
 .texto{
     display: flex;
@@ -44,6 +60,9 @@ img{
     margin-right: 5px;
     margin-left: 5px;
     width:80%;
+}
+.texto ul{
+    width: 80%;
 }
 .referencias{
     display:flex;
@@ -77,26 +96,14 @@ footer div{
 footer p{
     text-align: center;
 }
+/*Para la pagina 4*/
 #historico{
     width: 90%;
 }
-footer div .enlaces{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    width:30%;
-    border: 2px solid rgb(0, 0, 0);
-    margin-top: 2px;
-    justify-self:right;
+#europeo{
+    height:300px;
 }
-footer div .enlaces div{
-    display: flex;
-    justify-content: space-evenly;
-
-}
-a{
-    color:black;
-}
+/*para móviles*/
 @media(max-width:800px){
     header{
         height: 150px;
@@ -110,7 +117,7 @@ a{
     }
 }
 
-
+/*para ordenadores*/
 @media(min-width:800px){
     .filapar{
         display: flex;

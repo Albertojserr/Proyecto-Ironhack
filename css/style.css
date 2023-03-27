@@ -1,6 +1,7 @@
 /*Principalmente para el index pero usado en el resto*/
 html{
     background-color: rgb(191, 145, 134);
+    font-family: 'Courier New';
 }
 header{
     display: flex;
@@ -12,8 +13,9 @@ header{
     height: 225px;
 }
 h1{
-    font-size: 50px;
+    text-align: center;
     margin-top: 20px;
+    width:100%;
 }
 h2{
     font-size: 30px;
@@ -30,6 +32,17 @@ img{
 a{
     color:black;
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 2px solid rgb(119, 119, 119);
+}
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
 footer div .enlaces{
     display: flex;
     justify-content: space-around;
@@ -43,6 +56,10 @@ footer div .enlaces div{
     display: flex;
     justify-content: space-evenly;
 }
+footer p{
+    text-align: center;
+}
+
 .enlaces{
     display: flex;
     justify-content: flex-start;
@@ -67,34 +84,33 @@ footer div .enlaces div{
 .referencias{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     border: 2px solid rgb(147, 70, 70);
     margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+.referencias a{
+    text-decoration: none;
+    color: black;
+    word-wrap: break-word;
 }
 .encuestas{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+.encuestas form p{
+    margin: 0px;
+}
+
 #rfea{
     width:40%;
 }
 #ironhack{
     width:10%;
     margin:20px;
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    border: 2px solid rgb(119, 119, 119);
-}
-footer div{
-    display: flex;
-    justify-content: center;
-}
-footer p{
-    text-align: center;
 }
 /*Para la pagina 4*/
 #historico{
@@ -103,22 +119,53 @@ footer p{
 #europeo{
     height:300px;
 }
-/*para móviles*/
+
+/*para móviles o tablets*/
 @media(max-width:800px){
     header{
         height: 150px;
     }
 
     img{
-        width: 50%;
+        width: 90%;
     }
     .encuestas form p{
-        width: 80%;
+        width: 90%;
+    }
+    .referencias li{
+        margin-right: 5%;
+        font-size: small;
+    }
+    #historico{
+        margin:0px 5px;
+    }
+    h3{
+        margin-bottom: 10px;
+    }
+    .texto p{
+        width: 90%;
+        margin: 0px 5px;
+    }
+    footer{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .encuestas form{
+        width: 50%;
+    }
+    .encuestas form input{
+        width: 90%;
+    }
+    .encuestas form textarea{
+        width: 90%;
     }
 }
 
 /*para ordenadores*/
 @media(min-width:800px){
+    h1{
+        font-size: 50px;
+    }
     .filapar{
         display: flex;
         flex-direction: row-reverse;
@@ -139,4 +186,12 @@ footer p{
     footer{
         margin: 10px 15px 0px;
     }
+    .referencias{
+        justify-content: space-around;
+    }
+    .encuestas form .peq{
+        display: inline-block;
+        width: 20%;
+    }
+    
 }

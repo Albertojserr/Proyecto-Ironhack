@@ -1,6 +1,7 @@
-<html>
+<!DOCTYPE html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- Insertamos la hoja de estidos style.css y ponemos el titulo de esta página-->
         <link rel="stylesheet" href="./css/style.css">
         <title>Proyecto</title>
@@ -24,7 +25,7 @@
                 <ul class="referencias">
                     <li><a href="#Intro">Introducción</a></li>
                     <li><a href="#Estadio">Estadio</a></li>
-                    <li><a href="Famosos">Atletas Históricos</a></li>
+                    <li><a href="#Famosos">Atletas Históricos</a></li>
                 </ul>
             </nav>
         </div>
@@ -172,12 +173,12 @@
                 </div>
             </div>
         </div>
-        <!--Creamos las encuestas, con la pagina de respuesta en action, con target=_new para que lo ponga en una nueva página-->
+        <!--Creamos las encuestas, con la pagina de respuesta en action, con target=new para que lo ponga en una nueva página-->
         <div class="encuestas">
-            <form action="respuesta.html" method="get" target="_new">
+            <form action="respuesta.html" method="get" target="new">
                 <label for="Pruebas">Selecciona tu prueba favorita</label>
                 <br>
-                <select name="Pruebas">
+                <select id="Pruebas">
                     <option value="100">100m</option>
                     <option value="200">200m</option>
                     <option value="400">400m</option>
@@ -203,17 +204,17 @@
                 </select>
                 <input type="submit" value="Enviar">
             </form>
-            <form action="respuesta.html" method="get" target="_new">
+            <form action="respuesta.html" method="get" target="new">
                 <p>Rellene sus datos si quiere recibir la revista mensual</p>
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="name" name="Nombre">
+                <label class="peq" for="Nombre">Nombre: </label>
+                <input type="text" id="Nombre" name="Nombre">
                 <br>
 
-                <label for="Apellidos">Apellidos</label>
+                <label class="peq" for="Apellidos">Apellidos: </label>
                 <textarea id="Apellidos" name="Apellidos" rows="2" cols="28"></textarea>
                 <br>
 
-                <label for="email">Email: </label>
+                <label class="peq" for="email">Email: </label>
                 <input type="email" id="email" placeholder="prueba@direccion.com" >
                 <br>
                 <input type="submit" value="Registrarse">

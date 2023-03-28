@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Insertamos la hoja de estidos style.css y ponemos el titulo de esta página-->
         <link rel="stylesheet" href="./css/style.css">
         <title>Proyecto</title>
@@ -9,19 +10,21 @@
     <body>
         <!-- Insertamos los links para dirigir a otras páginas, estos se verán como unas imágenes-->
         <div class="enlaces">
-                <a href="pagina1.html"><img src="./imagenes/velocidad.png" alt="velocidad"></a>
+                <a href="pagina1.html"><img src="./imagenes/velocidad.png" alt="velocidad" title="Velocidad"></a>
                 <span> </span>
-                <a href="pagina2.html"><img src="./imagenes/fondo.png" alt="fondo"></a>
+                <a href="pagina2.html"><img src="./imagenes/fondo.png" alt="fondo" title="Fondo"></a>
                 <span> </span>
-                <a href="pagina3.html"><img src="./imagenes/concursos.png" alt="concursos"></a>
+                <a href="pagina3.html"><img src="./imagenes/concursos.png" alt="concursos" title="Concursos"></a>
                 <span> </span>
-                <a href="pagina4.html"><img src="./imagenes/estadio.png" alt="estadio"></a>
+                <a href="pagina4.html"><img src="./imagenes/estadio.png" alt="campeonatos" title="Campeonatos"></a>
         </div>
         <header>
+            <!-- Insertamos el titulo-->
             <h1>Atletismo</h1>
         </header>
         <div>
             <nav>
+                <!-- Insertamos una lista de partes de la propia página-->
                 <ul class="referencias">
                     <li><a href="#Intro">Introducción</a></li>
                     <li><a href="#Estadio">Estadio</a></li>
@@ -29,8 +32,10 @@
                 </ul>
             </nav>
         </div>
-        <div class="contenido">
+        <!-- Insertamos una sección donde irá todo el contenido de la página-->
+        <section>
             <h2 id="Intro">Introducción</h2>
+            <!-- Declaramos un contenedor de la clase filaimpar que tendrá el texto a la izquierda y la imagen a la derecha-->
             <div class="filaimpar">
                 <div class="texto">
                     <p>
@@ -63,6 +68,8 @@
                     <img src="https://aiatletismo.org/wp-content/uploads/2022/05/294029_668169-1200x600.jpg" alt="imagen1">
                 </div>
             </div>
+        </section>
+        <section>
             <h2 id="Estadio">Estadio</h2>
             <div class="filaimpar">
                 <div class="texto">
@@ -93,6 +100,8 @@
                     <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/eugene-hayward-field-1570608750.jpg" alt="estadio">
                 </div>
             </div>
+        </section>
+        <section>
             <h2 id="Famosos">Principales atletas de la historia</h2>
             <div>
                 <p id="historico">En 2000, el libro publicado por el diario deportivo francés España nairo, 100 campeones en un siglo de deporte, 
@@ -102,7 +111,6 @@
                     premiada entre las mujeres. El 2012 esa misma institución crea el Salón de la Fama.</p>
             </div>
             <h3>Hombres</h3>
-            <!--Tenemos dos tipos de filas, filaimpar y filapar, que lo que los diferencia es el orden en el que se coloca el texto y la imagen-->
             <div class="filaimpar">
                 <div class="texto">
                     <p>
@@ -140,6 +148,7 @@
                 </div>
             </div>
             <h3>Mujeres</h3>
+            <!-- Declaramos un contenedor de la clase filapar que tendrá el texto a la derecha y la imagen a la izquierda-->
             <div class="filapar">
                 <div class="texto">
                     <p>
@@ -172,7 +181,7 @@
                     <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/12/24/16719000491912.jpg" alt="yulimarrojas">
                 </div>
             </div>
-        </div>
+        </section>
         <!--Creamos las encuestas, con la pagina de respuesta en action, con target=new para que lo ponga en una nueva página-->
         <div class="encuestas">
             <form action="respuesta.html" method="get" target="new">
